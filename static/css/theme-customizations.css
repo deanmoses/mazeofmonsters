@@ -136,3 +136,24 @@
 	text-align: right;
 	padding-right: .5em;
 }
+
+/* on smaller windows, the site title begins to wrap */
+@media only screen and (max-width: 800px) {
+	/* disappear tagline */
+	.site-description {
+		display: none;
+	}
+	
+	/* shrink header title */
+	.site-title {
+		font-size: 80px !important;
+	}
+}
+
+/* on even smaller windows, site title wraps and needs spacing changed */
+@media only screen and (max-width: 605px) {
+	/* shrink header title */
+	.site-title {
+		padding-top: .5em !important;
+	}
+}

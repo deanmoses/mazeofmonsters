@@ -96,22 +96,27 @@
 	border: solid #222 1px;
 	opacity: 0.7;
 	border-radius: 5px;
-	-webkit-animation: swinging 10s;
+	-webkit-animation: fade-in 1s;
 }
 
 @-webkit-keyframes swinging {
 	0% { -webkit-transform: rotate(0); }
-	5% { -webkit-transform: rotate(10deg); }
-	10% { -webkit-transform: rotate(-9deg); }
-	15% { -webkit-transform: rotate(8deg); }
-	20% { -webkit-transform: rotate(-7deg); }
-	25% { -webkit-transform: rotate(6deg); }
-	30% { -webkit-transform: rotate(-5deg); }
-	35% { -webkit-transform: rotate(4deg); }
-	40% { -webkit-transform: rotate(-3deg); }
-	45% { -webkit-transform: rotate(2deg); }
+	5% { -webkit-transform: rotate(3deg); }
+	10% { -webkit-transform: rotate(-2deg); }
+	15% { -webkit-transform: rotate(2deg); }
+	20% { -webkit-transform: rotate(-1deg); }
+	25% { -webkit-transform: rotate(1deg); }
+	30% { -webkit-transform: rotate(-1deg); }
+	35% { -webkit-transform: rotate(1deg); }
+	40% { -webkit-transform: rotate(-1deg); }
+	45% { -webkit-transform: rotate(1deg); }
 	50% { -webkit-transform: rotate(0); } /* Come to rest at 50%. The rest is just stillness */
 	100% { -webkit-transform: rotate(0); }
+}
+
+@-webkit-keyframes fade-in {
+	0% { opacity: 0.1; }
+	100% { opacity: 0.7; }
 }
 
 .single .tagline {

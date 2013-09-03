@@ -97,15 +97,15 @@ get_header(); ?>
 	<?php } ?>
 
 	<?php if (get_custom_field('mcf')) { ?>
-		<div class="mcf">
-			<span class="label">MCF</span>
+		<div class="mcf" title="Most Common Terrain">
+			<span class="label">Terrain</span>
 			<?php print_custom_field('mcf'); ?>
 		</div>
 	<?php } ?>
 	
 	<?php if (get_custom_field('ab')) { ?>
 		<div class="ab">
-			<span class="label">AB</span>
+			<span class="label">Attack Bonus</span>
 			<?php print_custom_field('ab'); ?>
 		</div>
 	<?php } ?>

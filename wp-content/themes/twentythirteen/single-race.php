@@ -1,12 +1,9 @@
-<?php
+<?php 
 /**
- * Sample template for displaying single race posts.
- * Save this file as as single-race.php in your current theme.
- *
- * This sample code was based off of the Starkers Baseline theme: http://starkerstheme.com/
+ * Custom template for the race content type
  */
-
-get_header(); ?>
+ $classes[] = 'fmcg';
+ get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	
